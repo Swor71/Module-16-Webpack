@@ -8,11 +8,11 @@ class TodoList extends React.Component {
     }
     render() {
         let list;
-
+        
         if (this.props.list) {
             list = this.props.list.map(task => {
                 return (
-                    <Todo key={task.id} task={task} />
+                    <Todo key={task.id} task={task} remove={this.props.remove}/>
                 );
             })
         }

@@ -7,7 +7,9 @@ class Todo extends React.Component {
     }
     render() {
         return (
-            <li className={style.Todo}>{this.props.task.id}: {this.props.task.text}</li>
+            <li className={style.Todo}>{this.props.task.id}: {this.props.task.text}
+            <button onClick={() => this.props.remove(this.props.task.id)}>x</button>
+            </li>
         );
     }
 }
