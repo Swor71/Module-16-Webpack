@@ -12,7 +12,7 @@ class TodoList extends React.Component {
         if (this.props.list) {
             list = this.props.list.map(task => {
                 return (
-                    <Todo key={task.id} task={task} remove={this.props.remove}/>
+                    <Todo key={task.id} task={task} remove={this.props.remove} taskDone={this.props.taskDone}/>
                 );
             })
         }

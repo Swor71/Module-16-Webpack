@@ -1,3 +1,26 @@
 .Title {
-    
+    user-select: none;
+    background-color: #91CA47;
+    max-width: 400px;
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+    border-bottom: 1px solid gainsboro;
+}
+
+h1 {
+    padding-bottom: 5px;
+    font-size: 28px;
+    text-align: center;
+}
+
+h3 {
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.counter {
+    vertical-align: middle;
+    font-size: 24px;
+    padding-left: 20px;
 }
